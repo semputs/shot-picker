@@ -18,6 +18,8 @@ setup_voice.bat    :: optional, ~3 GB: PyTorch + ClearerVoice for Audio > Enhanc
 ```
 `lib\libmpv-2.dll` (~116 MB) is too big for GitHub, so `setup.bat` downloads it.
 
+**Clone to a short path**, such as `C:\Sandbox\workspace\shot-picker`. PySide6 has very long internal file paths, so setup fails in deep folders like `%TEMP%\...` unless Windows long-path support is turned on.
+
 ## Command line (no window, no libmpv needed)
 ```bat
 .venv\Scripts\python -m shotpicker info   project.shotpicker.json                 :: check clips exist + print the shot list (exit 1 if clips missing)
