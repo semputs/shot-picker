@@ -1,0 +1,17 @@
+# environments and downloaded binaries (setup.bat / setup_voice.bat recreate them)
+.venv/
+.venv-voice/
+lib/
+voice-models/
+__pycache__/
+*.pyc
+
+# personal projects, renders and caches stay on this PC
+projects/
+_backup-*/
+*.stab/
+*_parts/
+*.mp4
+*.mov
+*.wav
+*.tmp
